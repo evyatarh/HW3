@@ -6,7 +6,7 @@
 				});
 			  
                 $.ajax({
-                    url: "http://api.icndb.com/jokes/random?firstName="+localStorage.getItem('firstName')+"&lastName="+localStorage.getItem('lastName')+"",
+                    url: "https://api.icndb.com/jokes/random?firstName="+localStorage.getItem('firstName')+"&lastName="+localStorage.getItem('lastName')+"",
                     type: "get",
                     success: function (data) {
                         $("#joke").append("<p class='joke_text'>" +
